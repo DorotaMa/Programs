@@ -7,7 +7,6 @@ def Euklides(a,b):
     a = max(lst)
     b = min(lst)
     c = a % b
-    print(a,b,c)
     if c != 0:
         a = b
         b = c
