@@ -20,4 +20,13 @@ def Anagram(napis1, napis2):
         slownik2[litera] = slownik2.get(litera, 0) + 1
     return slownik1 == slownik2
 
-print(Anagram('I am Lord Voldemort', 'Tom Marvolo Riddle' ))
+print(Anagram('Quid est veritas', 'Vir est qui adest”' ))
+
+def anagrams(napis1, napis2):
+    napis1 = napis1.lower().replace(" ", "")
+    napis2 = napis2.lower().replace(" ", "")
+    return sorted(napis1) == sorted(napis2)
+
+print(anagrams('Quid est veritas', 'Vir est qui adest”' ))
+print(anagrams("Tom Marvolo Riddle", "I am Lord Voldemort"))
+print(anagrams("Ala ma kota", "Kot ma Alę"))
